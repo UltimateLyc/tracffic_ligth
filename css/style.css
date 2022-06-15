@@ -1,0 +1,43 @@
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #808080;
+}
+
+#semaforo
+{
+    height: 100vh; /* con esto se hace 100% del tama;o  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#contenedor_semaforo
+{
+    width: 150px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 25px;
+
+}
+
+#contenedor_luces
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;    
+}
+
+.ligth
+{
+    /* border: 1px solid red; */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+}
