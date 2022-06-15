@@ -1,6 +1,3 @@
-/* let testred = document.getElementById('rojo');
-testred.style.backgroundColor = 'red'; */
-
 const trafficLights = {
     stopLight: 'Red',
     cautionLight: 'Yellow',
@@ -19,17 +16,15 @@ function cambiarLuz()
 {
     switch (luzActual) {
         case 'Red':
-            luzActual = trafficLights.goLight;
-            console.log("🚀 ~ file: app.js ~ line 18 ~ luzActual", luzActual);
-            color = 'rojo';
+            luzActual = trafficLights.goLight; // hacemos el cambio para que cuando entre en el case nuevamente cambie de opcion
+            color = 'rojo'; //llamamos al id del HTML en el que estamos actualemente
             siguienteColor = 'red';
-            anteriorColor = 'amarillo';
+            anteriorColor = 'amarillo';//llamamos al id del HTML del que estaba antes del actual
             console.log(color);
             break;
 
         case 'Yellow':
             luzActual = trafficLights.stopLight;
-            console.log("🚀 ~ file: app.js ~ line 18 ~ luzActual", luzActual);
             color = 'amarillo';
             siguienteColor = 'yellow';
             anteriorColor = 'verde';
@@ -38,7 +33,6 @@ function cambiarLuz()
 
         case 'Green':
             luzActual = trafficLights.cautionLight;
-            console.log("🚀 ~ file: app.js ~ line 18 ~ luzActual", luzActual)
             color = 'verde';
             console.log(color);
             siguienteColor = 'green';
@@ -58,7 +52,6 @@ function cambiarLuz()
 
     let testOff = document.getElementById(anteriorColor);
     console.log("🚀 ~ file: app.js ~ line 60 ~ testOff", testOff)
-    
     testOff.style.backgroundColor = colorApagado;
 }
 
